@@ -13,7 +13,7 @@ header{
     width: 100vw;
     position: fixed;
     display: grid;
-    height: 80px;
+    height: 150px;
     grid-template-columns: auto auto;
     align-items: center;
 }
@@ -21,6 +21,7 @@ header{
     position: fixed;
     left: 0px;
     padding: 10px 50px;
+    font-size: 15px;
     display: flex;
     text-wrap: nowrap;
 }
@@ -30,7 +31,7 @@ header{
     padding: 10px 50px;
     display: flex;
     gap: 30px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .logo h1:hover, .right i:hover, a:hover, #passwordbox:hover, #genbtn:hover{
     color: gray;
@@ -49,6 +50,12 @@ section{
     text-align: center;
     align-items: center;
 }
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    font-size: 20px;
+}
 a{
     text-decoration: none;
     color: inherit;
@@ -66,17 +73,17 @@ footer{
     align-items: center;
     color: white;
 }
-@media (max-width: 500px){
+@media (max-width: 600px){
     header{
         display: flex;
         flex-direction: column;
-        margin-bottom: 2000000000px
+        top: 10px;
     }
     .logo, .right{
         position: relative;
     }
     .content{
-        padding-top: 25vh;
+        padding-top: 20vh;
     }
 }
 input{
